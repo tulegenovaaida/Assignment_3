@@ -131,7 +131,6 @@ public class BST<K extends Comparable<K>, V> implements Iterable<BST.Entry<K, V>
         if (node.left == null) {
             return node.right;
         }
-
         node.left = deleteMin(node.left);
         return node;
     }
